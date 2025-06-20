@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VisualVerse Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="hero">
+    <video class="hero-bg" autoplay muted loop>
+      <source src="IMAGES\backgroundVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-text">
+      <h1>VisualVerse Gallery</h1>
+      <p class="highlight">Every image tells a story. Which one speaks to you? A Glance is enough!</p>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="category-slider"></div>
+  </section>
+
+  <section id="categoryView" class="category-view" style="display:none;">
+    <div class="category-header">
+      <h1 id="categoryTitle"></h1>
+      <button id="backBtn">Back to categories</button>
+    </div>
+    <div class="image-grid"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="imgModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-btn" id="prevBtn">‹</button>
+      <img id="modalImg" src="" alt="Full View" />
+      <button class="modal-btn" id="nextBtn">›</button>
+      <button id="closeBtn">×</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
